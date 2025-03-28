@@ -195,9 +195,12 @@ class SpringBootExplorer:
 
         except (LexerError, JavaSyntaxError, IndexError, TypeError, AttributeError, RecursionError) as e:
             line = e.pos.line if hasattr(e,'pos') and e.pos else '?'; err_type=type(e).__name__
-            desc=getattr(e,'description',str(e))[:100] # Limit description length
-            logger.warning(f"Parsing failed for {os.path.basename(file_path)} - {err_type} at L{line}: {desc}.")
-            self.parse_errors.append((file_path, f"{err_type} at L{line}: {desc}"))
+            # Use the full exception string representation for potentially more detail
+            full_error_str = str(e)
+            # Log the full error string along with the type and location
+            logger.warning(f"Parsing failed for {os.path.basename(file_path)} - {err_type} at L{line}: {full_error_str}")
+            # Store a concise version or the full string - your choice
+            self.parse_errors.append((file_path, f"{err_type} at L{line}: {full_error_str[:150]}")) # Limit stored length
         except Exception as e:
             # Catch any other unexpected errors during parsing itself
             logger.error(f"Unexpected parsing error in {file_path}: {type(e).__name__}-{e}", exc_info=False)
@@ -620,7 +623,7 @@ class SpringBootExplorer:
                  # Determine superclass FQN
                  super_type = None
                  # SAFE: Check extends exists and is not None before accessing
-                 extends_val = context_comp.extends or []
+                 extends_val = context_comp.extends or [] # Default to empty list
                  if extends_val:
                      # Assuming comp.extends contains resolved FQNs from _build_component_relationships
                      first_super_fqn = extends_val[0] if isinstance(extends_val, list) else extends_val
