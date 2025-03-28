@@ -1,0 +1,14 @@
+[theme~="user-message"]::part(content) {
+   background-color: var(--lumo-primary-color-10pct);
+}
+
+[theme~="ai-message"]::part(content) {
+   background-color: var(--lumo-contrast-5pct); // Light grey background
+}
+
+[theme~="user-message"] {
+   align-self: flex-end; // Align user messages to the right
+}
+[theme~="ai-message"] {
+    align-self: flex-start; // Align AI messages to the left
+}
