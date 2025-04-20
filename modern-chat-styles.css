@@ -12,3 +12,65 @@
 [theme~="ai-message"] {
     align-self: flex-start; // Align AI messages to the left
 }
+
+/* 
+  CSS for LLM Processing Indicator 
+  Apply the ID "llm-processing-active" to a Vaadin Div 
+  component to activate this effect.
+*/
+
+/* Define the animation keyframes */
+@keyframes gradient-flow-vaadin {
+  0% {
+    background-position: 0% 50%; /* Start position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+    background-position: 0% 50%; /* End position (back to start for smooth loop) */
+  }
+}
+
+/* Style applied when the Div has the specific ID */
+#llm-processing-active {
+  /* Define the BRIGHTER animated gradient background */
+  background: linear-gradient(
+    -45deg, /* Gradient angle */
+    #a0d2ff, /* Brighter Light Blue */
+    #b2ebf2, /* Bright Light Cyan/Aqua */
+    #c5cae9, /* Brighter Light Indigo/Lavender */
+    #a0d2ff  /* Back to Brighter Light Blue */
+  );
+  background-size: 400% 400%; /* Make gradient larger than the box */
+  
+  /* Apply the animation */
+  animation: gradient-flow-vaadin 4s ease infinite; 
+
+  /* Optional: Adjust text color for better contrast during processing */
+  color: #0d47a1; 
+
+  /* Optional: Ensure some default padding if the Div might be empty */
+  /* padding: 1em; */ /* Uncomment and adjust if needed */
+
+  /* Optional: Add a subtle transition for when the ID is added/removed, 
+     though the animation itself is the main effect. This smooths the 
+     *start* and *stop* if the element had a different background before. */
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
+
+/* 
+  Note: You might want to define default styles for your Div 
+  when it *doesn't* have the ID, for example:
+*/
+/* 
+div { 
+  background-color: #ffffff; 
+  color: #333;
+  padding: 1em; 
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; 
+} 
+*/
+/* Adjust the selector above (e.g., use a class) to target your specific Divs */
