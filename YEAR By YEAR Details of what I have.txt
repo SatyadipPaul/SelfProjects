@@ -1,0 +1,18 @@
+YEAR By YEAR Details of what I have done in My Project:
+
+
+Year 2022 (1st Year in the Project)
+Current Projects and Impact==>
+As the only QA for Redwing Core(my Team) I drove automation for Redwing Core Services. Over that year I was able to push automation penetration and coverage to more than 90%.
+I optimized the Test Automation Framework which improved stability and reliability of test execution and reduced manual test execution to near zero. The earlier testing cycle involved 2 Resources and with the improvements it was now only 1 Resource. These savings helped perform Exploratory Testing which improved Teams confidence on over 19 Releases performed and had zero Defect Leakages
+Impact Beyond IC==>
+With an internal company solution called Bluegrid getting decommissioned, automation test scenarios were no longer able to be executed on CICD pipeline. As a First within JPMorgan I was able to implement Selenium Grid on our Cloud Platform GKP. I partnered with central Testing COE teams and helped them rollout the implementation to other Impacted Teams across the Organization.
+Our Testing team with the implementation was able to achieve higher throughput via Parallel Test Execution utilizing Selenium Grid, which was a step towards modernizing the Team
+
+
+Year 2023.
+Current Projects and Impact==>
+Along with my contribution in Redwing Core as QA, I started with "VET QA" for "TIM Automation". This year i contributed in both the Projects and was efficiently able to make meaningful contributions to VET QA Teams Automation Framework. The team was in the Phase of migration of the Application that needed to migrate the exiting then obsolete Test Scripts for new TIM application. The Knowledge i brought from redwing core as an automation SME , did bring Major Optimizations across VET Automation Framework and its test Automation Reporting strategy. The contributions were held in high regards and well appreciated.
+
+Impact Beyond IC==>
+"TIM Automation" project since was an UI Test Automation activity, needed efficient and early detection of UI changes and UI bugs with minimum False positives. Since I had always looked at modern ways of doing things, I stumbled upon Applitools EYES SDK that was already available within the Firm and was the right candidate to be brought in at this time. I drove the implementation of integrating Applitools Eyes into the Selenium JAVA Framework. I singlehandedly onboarded the Team and the framework to Applitools Platform. The implementation required intensive and radical thinking approach to make it as a seamless solution for the team, without them having to deal with the complexities of the approach. Today we run everyday Project critical scenarios with Validate the Application UI for mulitple User Roles and Business flows and gives us First hand alerts of Failures which otherwise if not covered in test Scope would have been missed.
