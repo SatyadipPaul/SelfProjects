@@ -1,18 +1,38 @@
-YEAR By YEAR Details of what I have done in My Project:
+**Year 2024**
 
+**1. Current Projects and Impact**
 
-Year 2022 (1st Year in the Project)
-Current Projects and Impact==>
-As the only QA for Redwing Core(my Team) I drove automation for Redwing Core Services. Over that year I was able to push automation penetration and coverage to more than 90%.
-I optimized the Test Automation Framework which improved stability and reliability of test execution and reduced manual test execution to near zero. The earlier testing cycle involved 2 Resources and with the improvements it was now only 1 Resource. These savings helped perform Exploratory Testing which improved Teams confidence on over 19 Releases performed and had zero Defect Leakages
-Impact Beyond IC==>
-With an internal company solution called Bluegrid getting decommissioned, automation test scenarios were no longer able to be executed on CICD pipeline. As a First within JPMorgan I was able to implement Selenium Grid on our Cloud Platform GKP. I partnered with central Testing COE teams and helped them rollout the implementation to other Impacted Teams across the Organization.
-Our Testing team with the implementation was able to achieve higher throughput via Parallel Test Execution utilizing Selenium Grid, which was a step towards modernizing the Team
+*   **Redwing Core (Project IC) - Major Modernization:**
+    *   **Critical Role:** Played a pivotal QA role during the migration from **Oracle to MongoDB** and the accompanying modernization of the **Redwing Console**.
+    *   **Subject Matter Expertise:** Leveraged deep knowledge of Redwing Core services and console functionality to ensure seamless Business As Usual (BAU) operations for core services and accurate implementation of new console features, proving instrumental to the migration's success.
+*   **VET QA Role Expansion & Leadership:**
+    *   Transitioned from TIM Automation to broader **VET QA Regression** responsibilities.
+    *   Assumed **ownership of regression testing for 2 distinct VET products**.
+*   **Redwing SPICA Collaboration & Process Improvement:**
+    *   Provided dedicated QA support for the **Redwing SPICA** team's monthly releases.
+    *   **Pioneered "In Sprint Automation":** Successfully implemented automation within the development sprint cycle for SPICA releases. This marked a **first within the VET QA team**, moving away from the previous T-1 (testing post-sprint) model.
+    *   **Impact:** Initiative was highly appreciated by the Redwing SPICA team, significantly boosting their confidence in release quality and delivery cadence.
+*   **VET NexGen Project - Foundational Role:**
+    *   Selected for the strategic **"VET NexGen"** project based on recognized automation expertise, strong technical skills, and innovative thinking.
+    *   **Core Framework Design:** Tasked with designing and establishing an efficient automation solution capable of meeting the project's demanding requirement for testing newly delivered code "on the fly" in lower development environments.
+    *   **Successfully designed and implemented the foundational core automation framework** aligning with management's vision and project needs.
 
+**2. Impact Beyond IC**
 
-Year 2023.
-Current Projects and Impact==>
-Along with my contribution in Redwing Core as QA, I started with "VET QA" for "TIM Automation". This year i contributed in both the Projects and was efficiently able to make meaningful contributions to VET QA Teams Automation Framework. The team was in the Phase of migration of the Application that needed to migrate the exiting then obsolete Test Scripts for new TIM application. The Knowledge i brought from redwing core as an automation SME , did bring Major Optimizations across VET Automation Framework and its test Automation Reporting strategy. The contributions were held in high regards and well appreciated.
-
-Impact Beyond IC==>
-"TIM Automation" project since was an UI Test Automation activity, needed efficient and early detection of UI changes and UI bugs with minimum False positives. Since I had always looked at modern ways of doing things, I stumbled upon Applitools EYES SDK that was already available within the Firm and was the right candidate to be brought in at this time. I drove the implementation of integrating Applitools Eyes into the Selenium JAVA Framework. I singlehandedly onboarded the Team and the framework to Applitools Platform. The implementation required intensive and radical thinking approach to make it as a seamless solution for the team, without them having to deal with the complexities of the approach. Today we run everyday Project critical scenarios with Validate the Application UI for mulitple User Roles and Business flows and gives us First hand alerts of Failures which otherwise if not covered in test Scope would have been missed.
+*   **1. Driving Future-Proof Test Automation (Playwright Initiative):**
+    *   **Identified Need & Piloted Solution:** Recognizing limitations of Selenium for future needs, initiated and piloted the migration from Selenium Java to the more modern **Playwright Java** framework.
+    *   **Strategic Advocacy:** Successfully articulated the benefits of Playwright (modernization alignment, enhanced capabilities for new tools/apps, future-proofing) to senior management, driving the strategic shift.
+*   **2. Enabling Modern Framework Adoption (GKP Grid Enhancement):**
+    *   **Overcame Critical Blocker:** Identified and resolved the technical incompatibility between the newly piloted Playwright Java framework and the existing **Selenium Grid on GKP**.
+    *   **Technical Problem Solving:** Successfully enabled Playwright test execution on the GKP Selenium Grid, removing a significant obstacle to the modernization effort and broader team adoption.
+*   **3. Innovative Cross-Platform Visibility (Message Visualizer Tool):**
+    *   **Addressed Key Challenge:** Tackled the widespread challenge of tracing message flows across the complex Redwing (MongoDB, multi-search UI) and VET (18+ DB tables) platforms, which hampered efficiency for QA, Developers, and Business Users.
+    *   **Hackathon Winner & Solo Development:** Conceived and **singlehandedly built "Message Visualizer"** during the IC IMOS Hackathon 2024, achieving recognition as **one of the 4 Hackathon winners**.
+    *   **Technical Innovation:**
+        *   Developed a modern React UI using **Vaadin Flow** components for a user-friendly experience.
+        *   Introduced **Mermaid.js** for "Diagram as Code" visualization of data flow – noted as a **first within Instruction Capture**.
+        *   Created a **one-stop solution** providing comprehensive message tracing across Redwing and VET with **minimal user clicks**.
+    *   **Significant Projected Impact:**
+        *   The tool is currently in UAT and planned for **Production rollout in 2025**.
+        *   Based on engagement from **10 daily users** in UAT, the tool is estimated to save **over 75,000+ man-hours annually** by drastically reducing troubleshooting and investigation time. Post-production savings are projected to be significantly higher.
+    *   **High Visibility & Acclaim:** Successfully presented the tool to senior management and across multiple forums, receiving widespread appreciation and accolades for its innovation and potential impact.
